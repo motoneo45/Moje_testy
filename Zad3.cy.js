@@ -11,5 +11,7 @@ describe("Testy logowania POP", ()=>{
       logIN.visit();
       logIN.zaloguj();
       logIN.wyloguj();
+      logIN.zaloguj_dodatkowe_dane();
+      logIN.wyloguj();
     })
 });

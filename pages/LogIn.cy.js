@@ -13,5 +13,11 @@ class LogIn{
         cy.get('#open-navigation-menu-mobile').click();
         cy.get('.e1phyiqy2').last().click();
      }
+
+     zaloguj_dodatkowe_dane(){
+        cy.get ('#user_email').should("be.visible").type('testowyqa@qa.team');
+        cy.get ('#user_password').should("be.visible").type('QA!automation-1');
+        cy.get('.eckniwg2').should("be.visible").click(); 
+    }
 }
 export default LogIn;
